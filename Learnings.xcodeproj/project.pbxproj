@@ -17,6 +17,7 @@
 		788CA7BD2ABC0B6A00D47050 /* LearningsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788CA7BC2ABC0B6A00D47050 /* LearningsTests.swift */; };
 		788CA7C72ABC0B6A00D47050 /* LearningsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788CA7C62ABC0B6A00D47050 /* LearningsUITests.swift */; };
 		788CA7C92ABC0B6A00D47050 /* LearningsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788CA7C82ABC0B6A00D47050 /* LearningsUITestsLaunchTests.swift */; };
+		78E7763B2AC46513008A24E2 /* ApplePayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E7763A2AC46513008A24E2 /* ApplePayViewController.swift */; };
 		C7D431288C6593203A0BBCDB /* Pods_Learnings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB5D2713A5FBE961CE071C77 /* Pods_Learnings.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		788CA7C62ABC0B6A00D47050 /* LearningsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningsUITests.swift; sourceTree = "<group>"; };
 		788CA7C82ABC0B6A00D47050 /* LearningsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		788CA7D52ABC0E0600D47050 /* Learnings.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Learnings.entitlements; sourceTree = "<group>"; };
+		78E7763A2AC46513008A24E2 /* ApplePayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePayViewController.swift; sourceTree = "<group>"; };
 		932A5ADD4667864F1304AD41 /* Pods-Learnings-LearningsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Learnings-LearningsUITests.debug.xcconfig"; path = "Target Support Files/Pods-Learnings-LearningsUITests/Pods-Learnings-LearningsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AB087B55215ABAD49FA299C4 /* Pods_Learnings_LearningsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Learnings_LearningsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6ABF1113A59EA98C71DC7E5 /* Pods-Learnings-LearningsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Learnings-LearningsUITests.release.xcconfig"; path = "Target Support Files/Pods-Learnings-LearningsUITests/Pods-Learnings-LearningsUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				788CA7A52ABC0B6700D47050 /* AppDelegate.swift */,
 				788CA7A72ABC0B6700D47050 /* SceneDelegate.swift */,
 				788CA7A92ABC0B6700D47050 /* ViewController.swift */,
+				78E7763A2AC46513008A24E2 /* ApplePayViewController.swift */,
 				788CA7AB2ABC0B6700D47050 /* Main.storyboard */,
 				788CA7AE2ABC0B6900D47050 /* Assets.xcassets */,
 				788CA7B02ABC0B6900D47050 /* LaunchScreen.storyboard */,
@@ -379,6 +382,7 @@
 			files = (
 				788CA7AA2ABC0B6700D47050 /* ViewController.swift in Sources */,
 				788CA7A62ABC0B6700D47050 /* AppDelegate.swift in Sources */,
+				78E7763B2AC46513008A24E2 /* ApplePayViewController.swift in Sources */,
 				788CA7A82ABC0B6700D47050 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

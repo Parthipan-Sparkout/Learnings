@@ -40,10 +40,12 @@ class ViewController: UIViewController {
 
             // The credentials have been successfully saved.
         } */
-     let keyChain = KeychainWrapper(serviceName: "test", accessGroup: "6CWF679Z8N.com.sparkout.test")
+     let keyChain = KeychainWrapper(serviceName: "test", accessGroup: "6CWF679Z8N.sharingUserInfo")
        let success = keyChain.set("Parthipan", forKey: "name")
         keyChain.set("Jai", forKey: "subname")
         print(success)
     }
+    
+    
 }
 
