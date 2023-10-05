@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8z8-EF-lO5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2gm-N6-GoY">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -104,10 +104,82 @@
             </objects>
             <point key="canvasLocation" x="916" y="11"/>
         </scene>
+        <!--Video Player View Controller-->
+        <scene sceneID="gVA-MA-Jqa">
+            <objects>
+                <viewController id="2gm-N6-GoY" customClass="VideoPlayerViewController" customModule="Learnings" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5tA-7e-wt4">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RdI-JI-fEy">
+                                <rect key="frame" x="0.0" y="59" width="393" height="300"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="cVr-uT-Phd"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nNi-vs-nJh">
+                                <rect key="frame" x="176.66666666666666" y="189" width="40" height="40"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="4DI-il-WQ0"/>
+                                    <constraint firstAttribute="height" constant="40" id="QsS-F7-HXJ"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="play.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="playButtonAction:" destination="2gm-N6-GoY" eventType="touchUpInside" id="LvT-6s-irB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="93W-VG-cCD">
+                                <rect key="frame" x="0.0" y="59" width="393" height="300"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <connections>
+                                    <action selector="pauseButtonAction:" destination="2gm-N6-GoY" eventType="touchUpInside" id="Q5I-eV-Say"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="ecR-1B-nWJ">
+                                <rect key="frame" x="176.66666666666666" y="189" width="40" height="40"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KqY-WK-hsF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="93W-VG-cCD" firstAttribute="leading" secondItem="RdI-JI-fEy" secondAttribute="leading" id="0mg-HZ-c77"/>
+                            <constraint firstItem="ecR-1B-nWJ" firstAttribute="trailing" secondItem="nNi-vs-nJh" secondAttribute="trailing" id="7bh-By-mS0"/>
+                            <constraint firstItem="nNi-vs-nJh" firstAttribute="centerX" secondItem="RdI-JI-fEy" secondAttribute="centerX" id="HyF-fn-soh"/>
+                            <constraint firstItem="RdI-JI-fEy" firstAttribute="leading" secondItem="KqY-WK-hsF" secondAttribute="leading" id="Ima-Qj-rVD"/>
+                            <constraint firstItem="ecR-1B-nWJ" firstAttribute="leading" secondItem="nNi-vs-nJh" secondAttribute="leading" id="JTb-PV-Mr9"/>
+                            <constraint firstItem="ecR-1B-nWJ" firstAttribute="top" secondItem="nNi-vs-nJh" secondAttribute="top" id="U9D-wC-7yE"/>
+                            <constraint firstItem="ecR-1B-nWJ" firstAttribute="bottom" secondItem="nNi-vs-nJh" secondAttribute="bottom" id="UJk-yK-p1I"/>
+                            <constraint firstItem="RdI-JI-fEy" firstAttribute="top" secondItem="KqY-WK-hsF" secondAttribute="top" id="aKd-9G-bD5"/>
+                            <constraint firstItem="93W-VG-cCD" firstAttribute="top" secondItem="RdI-JI-fEy" secondAttribute="top" id="csr-cC-OP6"/>
+                            <constraint firstItem="93W-VG-cCD" firstAttribute="trailing" secondItem="RdI-JI-fEy" secondAttribute="trailing" id="dLB-sK-bmm"/>
+                            <constraint firstItem="nNi-vs-nJh" firstAttribute="centerY" secondItem="RdI-JI-fEy" secondAttribute="centerY" id="kyV-OA-5uz"/>
+                            <constraint firstItem="93W-VG-cCD" firstAttribute="bottom" secondItem="RdI-JI-fEy" secondAttribute="bottom" id="nfW-11-aQY"/>
+                            <constraint firstItem="KqY-WK-hsF" firstAttribute="trailing" secondItem="RdI-JI-fEy" secondAttribute="trailing" id="pP5-iS-3ak"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityLoader" destination="ecR-1B-nWJ" id="Veo-cR-ZRg"/>
+                        <outlet property="pauseButton" destination="93W-VG-cCD" id="vPy-6s-gm8"/>
+                        <outlet property="playButton" destination="nNi-vs-nJh" id="I0c-ve-LTC"/>
+                        <outlet property="videoView" destination="RdI-JI-fEy" id="aWh-Lg-KCg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3F2-Gp-J9l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1954.9618320610687" y="10.563380281690142"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="play.fill" catalog="system" width="32" height="32"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
