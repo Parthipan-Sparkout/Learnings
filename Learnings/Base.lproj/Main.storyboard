@@ -114,9 +114,39 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RdI-JI-fEy">
                                 <rect key="frame" x="0.0" y="59" width="393" height="300"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="gz6-Nh-aSd">
+                                        <rect key="frame" x="20" y="261.66666666666669" width="50" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="pxU-7S-KuU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="VHF-YL-Kha">
+                                        <rect key="frame" x="88" y="255" width="217" height="31"/>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="OaU-bn-YfL">
+                                        <rect key="frame" x="323" y="261.66666666666669" width="50" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="TK5-x9-t4j"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="VHF-YL-Kha" firstAttribute="leading" secondItem="gz6-Nh-aSd" secondAttribute="trailing" constant="20" id="1bu-7F-bzA"/>
                                     <constraint firstAttribute="height" constant="300" id="cVr-uT-Phd"/>
+                                    <constraint firstItem="OaU-bn-YfL" firstAttribute="centerY" secondItem="VHF-YL-Kha" secondAttribute="centerY" id="eJB-Cu-oOv"/>
+                                    <constraint firstItem="OaU-bn-YfL" firstAttribute="leading" secondItem="VHF-YL-Kha" secondAttribute="trailing" constant="20" id="lNN-TM-lzc"/>
+                                    <constraint firstItem="gz6-Nh-aSd" firstAttribute="leading" secondItem="RdI-JI-fEy" secondAttribute="leading" constant="20" id="rKM-wG-z74"/>
+                                    <constraint firstAttribute="bottom" secondItem="VHF-YL-Kha" secondAttribute="bottom" constant="15" id="rUX-py-IYI"/>
+                                    <constraint firstAttribute="trailing" secondItem="OaU-bn-YfL" secondAttribute="trailing" constant="20" id="xD4-3w-cVg"/>
+                                    <constraint firstItem="gz6-Nh-aSd" firstAttribute="centerY" secondItem="VHF-YL-Kha" secondAttribute="centerY" id="y0f-5A-ixd"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nNi-vs-nJh">
@@ -163,8 +193,11 @@
                     </view>
                     <connections>
                         <outlet property="activityLoader" destination="ecR-1B-nWJ" id="Veo-cR-ZRg"/>
+                        <outlet property="lblCurrentTime" destination="gz6-Nh-aSd" id="tFf-al-MvF"/>
+                        <outlet property="lblTotalTime" destination="OaU-bn-YfL" id="fcb-Iy-7SI"/>
                         <outlet property="pauseButton" destination="93W-VG-cCD" id="vPy-6s-gm8"/>
                         <outlet property="playButton" destination="nNi-vs-nJh" id="I0c-ve-LTC"/>
+                        <outlet property="seekSlider" destination="VHF-YL-Kha" id="4xw-Fz-GMN"/>
                         <outlet property="videoView" destination="RdI-JI-fEy" id="aWh-Lg-KCg"/>
                     </connections>
                 </viewController>
@@ -174,7 +207,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="play.fill" catalog="system" width="32" height="32"/>
+        <image name="play.fill" catalog="system" width="117" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
