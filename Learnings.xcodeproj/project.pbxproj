@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5CADD967A4DD7749A3CD4E11 /* Pods_Learnings_LearningsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB087B55215ABAD49FA299C4 /* Pods_Learnings_LearningsUITests.framework */; };
 		780B656F2ACD4052003D2B19 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780B656E2ACD4052003D2B19 /* VideoPlayerViewController.swift */; };
+		781D68F52AD3E28000775A2C /* BluetoothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781D68F42AD3E28000775A2C /* BluetoothViewController.swift */; };
 		784EEED02ACFDB0E009BFF42 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784EEECF2ACFDB0E009BFF42 /* AuthenticationViewController.swift */; };
 		784EEED22ACFE233009BFF42 /* BiometricAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784EEED12ACFE233009BFF42 /* BiometricAuth.swift */; };
 		788CA7A62ABC0B6700D47050 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788CA7A52ABC0B6700D47050 /* AppDelegate.swift */; };
@@ -45,6 +46,7 @@
 		261A0B6FB3B4EE4C5938B734 /* Pods-Learnings.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Learnings.debug.xcconfig"; path = "Target Support Files/Pods-Learnings/Pods-Learnings.debug.xcconfig"; sourceTree = "<group>"; };
 		4454871FA8160ED9453DA754 /* Pods-Learnings.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Learnings.release.xcconfig"; path = "Target Support Files/Pods-Learnings/Pods-Learnings.release.xcconfig"; sourceTree = "<group>"; };
 		780B656E2ACD4052003D2B19 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
+		781D68F42AD3E28000775A2C /* BluetoothViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothViewController.swift; sourceTree = "<group>"; };
 		784EEECF2ACFDB0E009BFF42 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
 		784EEED12ACFE233009BFF42 /* BiometricAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricAuth.swift; sourceTree = "<group>"; };
 		788CA7A22ABC0B6700D47050 /* Learnings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Learnings.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +133,14 @@
 			path = Applepay;
 			sourceTree = "<group>";
 		};
+		781D68F32AD3E26900775A2C /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				781D68F42AD3E28000775A2C /* BluetoothViewController.swift */,
+			);
+			path = Bluetooth;
+			sourceTree = "<group>";
+		};
 		784EEECD2ACFDACB009BFF42 /* Videoplayer */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +186,7 @@
 				788CA7D52ABC0E0600D47050 /* Learnings.entitlements */,
 				788CA7A52ABC0B6700D47050 /* AppDelegate.swift */,
 				788CA7A72ABC0B6700D47050 /* SceneDelegate.swift */,
+				781D68F32AD3E26900775A2C /* Bluetooth */,
 				784EEECE2ACFDADE009BFF42 /* Authentication */,
 				784EEECD2ACFDACB009BFF42 /* Videoplayer */,
 				780B656C2ACD31D6003D2B19 /* KeychainSharing */,
@@ -426,6 +437,7 @@
 				780B656F2ACD4052003D2B19 /* VideoPlayerViewController.swift in Sources */,
 				784EEED22ACFE233009BFF42 /* BiometricAuth.swift in Sources */,
 				78E7763B2AC46513008A24E2 /* ApplePayViewController.swift in Sources */,
+				781D68F52AD3E28000775A2C /* BluetoothViewController.swift in Sources */,
 				784EEED02ACFDB0E009BFF42 /* AuthenticationViewController.swift in Sources */,
 				788CA7A82ABC0B6700D47050 /* SceneDelegate.swift in Sources */,
 			);

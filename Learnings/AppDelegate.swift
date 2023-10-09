@@ -7,13 +7,44 @@
 
 import UIKit
 
+struct Country {
+    
+}
+
+struct Address {
+    let city: String
+}
+
+@dynamicMemberLookup
+struct User {
+    let address: Address
+    // It will return city
+    subscript(dynamicMember member: String) -> String {
+        if member == "city" {
+            return address.city
+        } else {
+            return address.city
+        }
+    }
+    
+    // It will return city
+    subscript(dynamicMember member: Int) -> String {
+        if member == 1 {
+            return address.city
+        } else {
+            return address.city
+        }
+    }
+}
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
+    
+    let a: [String: String] = ["dfdf": "fdfdf"]
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+       
         return true
     }
 

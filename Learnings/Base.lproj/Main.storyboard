@@ -205,10 +205,10 @@
             </objects>
             <point key="canvasLocation" x="1954.9618320610687" y="10.563380281690142"/>
         </scene>
-        <!--Authentication View Controller-->
+        <!--Bluetooth View Controller-->
         <scene sceneID="N1j-i3-zJk">
             <objects>
-                <viewController id="5oW-rH-gkV" customClass="AuthenticationViewController" customModule="Learnings" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5oW-rH-gkV" customClass="BluetoothViewController" customModule="Learnings" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="USn-4t-t0Z">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
