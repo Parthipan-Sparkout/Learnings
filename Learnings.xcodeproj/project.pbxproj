@@ -10,6 +10,9 @@
 		5CADD967A4DD7749A3CD4E11 /* Pods_Learnings_LearningsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB087B55215ABAD49FA299C4 /* Pods_Learnings_LearningsUITests.framework */; };
 		780B656F2ACD4052003D2B19 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780B656E2ACD4052003D2B19 /* VideoPlayerViewController.swift */; };
 		781D68F52AD3E28000775A2C /* BluetoothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781D68F42AD3E28000775A2C /* BluetoothViewController.swift */; };
+		781F1AA42AE935C0008491F5 /* CashFreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781F1AA32AE935C0008491F5 /* CashFreeViewController.swift */; };
+		781F1AA82AE93609008491F5 /* CFSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 781F1AA62AE935F4008491F5 /* CFSDK.xcframework */; };
+		781F1AA92AE93609008491F5 /* CFSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 781F1AA62AE935F4008491F5 /* CFSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		784EEED02ACFDB0E009BFF42 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784EEECF2ACFDB0E009BFF42 /* AuthenticationViewController.swift */; };
 		784EEED22ACFE233009BFF42 /* BiometricAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784EEED12ACFE233009BFF42 /* BiometricAuth.swift */; };
 		788CA7A62ABC0B6700D47050 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788CA7A52ABC0B6700D47050 /* AppDelegate.swift */; };
@@ -42,11 +45,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		781F1AAA2AE93609008491F5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				781F1AA92AE93609008491F5 /* CFSDK.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		261A0B6FB3B4EE4C5938B734 /* Pods-Learnings.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Learnings.debug.xcconfig"; path = "Target Support Files/Pods-Learnings/Pods-Learnings.debug.xcconfig"; sourceTree = "<group>"; };
 		4454871FA8160ED9453DA754 /* Pods-Learnings.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Learnings.release.xcconfig"; path = "Target Support Files/Pods-Learnings/Pods-Learnings.release.xcconfig"; sourceTree = "<group>"; };
 		780B656E2ACD4052003D2B19 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
 		781D68F42AD3E28000775A2C /* BluetoothViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothViewController.swift; sourceTree = "<group>"; };
+		781F1AA32AE935C0008491F5 /* CashFreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashFreeViewController.swift; sourceTree = "<group>"; };
+		781F1AA62AE935F4008491F5 /* CFSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = CFSDK.xcframework; sourceTree = "<group>"; };
 		784EEECF2ACFDB0E009BFF42 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
 		784EEED12ACFE233009BFF42 /* BiometricAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricAuth.swift; sourceTree = "<group>"; };
 		788CA7A22ABC0B6700D47050 /* Learnings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Learnings.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +95,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7D431288C6593203A0BBCDB /* Pods_Learnings.framework in Frameworks */,
+				781F1AA82AE93609008491F5 /* CFSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +161,22 @@
 			path = Bluetooth;
 			sourceTree = "<group>";
 		};
+		781F1AA22AE93527008491F5 /* Cashfree */ = {
+			isa = PBXGroup;
+			children = (
+				781F1AA32AE935C0008491F5 /* CashFreeViewController.swift */,
+			);
+			path = Cashfree;
+			sourceTree = "<group>";
+		};
+		781F1AA52AE935D6008491F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				781F1AA62AE935F4008491F5 /* CFSDK.xcframework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 		784EEECD2ACFDACB009BFF42 /* Videoplayer */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +222,7 @@
 				788CA7D52ABC0E0600D47050 /* Learnings.entitlements */,
 				788CA7A52ABC0B6700D47050 /* AppDelegate.swift */,
 				788CA7A72ABC0B6700D47050 /* SceneDelegate.swift */,
+				781F1AA22AE93527008491F5 /* Cashfree */,
 				781D68F32AD3E26900775A2C /* Bluetooth */,
 				784EEECE2ACFDADE009BFF42 /* Authentication */,
 				784EEECD2ACFDACB009BFF42 /* Videoplayer */,
@@ -195,6 +232,7 @@
 				788CA7AE2ABC0B6900D47050 /* Assets.xcassets */,
 				788CA7B02ABC0B6900D47050 /* LaunchScreen.storyboard */,
 				788CA7B32ABC0B6900D47050 /* Info.plist */,
+				781F1AA52AE935D6008491F5 /* Frameworks */,
 			);
 			path = Learnings;
 			sourceTree = "<group>";
@@ -228,6 +266,7 @@
 				788CA79F2ABC0B6700D47050 /* Frameworks */,
 				788CA7A02ABC0B6700D47050 /* Resources */,
 				31F881602FEFD8B5A48CFCAB /* [CP] Embed Pods Frameworks */,
+				781F1AAA2AE93609008491F5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -433,6 +472,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				788CA7AA2ABC0B6700D47050 /* ViewController.swift in Sources */,
+				781F1AA42AE935C0008491F5 /* CashFreeViewController.swift in Sources */,
 				788CA7A62ABC0B6700D47050 /* AppDelegate.swift in Sources */,
 				780B656F2ACD4052003D2B19 /* VideoPlayerViewController.swift in Sources */,
 				784EEED22ACFE233009BFF42 /* BiometricAuth.swift in Sources */,

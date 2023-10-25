@@ -25,13 +25,14 @@ class BluetoothViewController: UIViewController {
 extension BluetoothViewController :  CBCentralManagerDelegate {
     func centralManagerDidUpdateState(_ central: CBCentralManager) {
         if central.state == .poweredOn {
-            central.scanForPeripherals(withServices: nil, options: nil)
+            central.scanForPeripherals(withServices: nil, options: [CBCentralManagerScanOptionAllowDuplicatesKey: false])
             print("Scanning...")
         }
     }
     
     func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
-        if peripheral.name == "Colorfit Pro 2" {
+        print("Blutooth name", peripheral.name)
+        if peripheral.name == "Colorfi 2" {
             cbCentralManager.stopScan()
             cbCentralManager.connect(peripheral, options: nil)
             self.peripheral = peripheral
